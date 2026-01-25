@@ -1,0 +1,14 @@
+# Antigravity Workflows
+node_modules/
+.env
+.env.local
+.env.*.local
+.DS_Store
+
+# Antigravity Brain (Agent Knowledge)
+brain/
+*.log
+
+# Build outputs
+dist/
+build/
