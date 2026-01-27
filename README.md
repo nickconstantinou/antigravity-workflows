@@ -1,6 +1,6 @@
 # 🤖 Antigravity Workflows & Lifecycle
 
-This repository contains the high-fidelity development lifecycle and agentic workflows used at **Antigravity**. It provides a structured framework for agents to build, review, and maintain complex codebases while minimizing context poisoning and token fatigue.
+This repository contains the high-fidelity development lifecycle and **deterministic architectural axioms** used by **Antigravity**. It provides a structured framework for agents to build, review, and maintain a codebase designed for machine parsing, atomic modularity, and zero-hallucination logic.
 
 ---
 
@@ -12,11 +12,11 @@ graph TD
         A["Discovery (/create-issue)"] --> B["Design (/create-plan)"]
     end
     
-    B --> CP1["🛑 Human Checkpoint: Plan Approval"]
+    B --> CP1["🛑 Human Checkpoint: Schema & Plan Approval"]
     
     subgraph "Epoch 2: The Builder (High Speed/Accuracy)"
         CP1 -->|FRESH CHAT| C["Build (/execute)"]
-        C --> D["Peer Review (Claude)"]
+        C --> D["Peer Review (/review) using Claude"]
         D --> E["Synthesis (/peer-review)"]
     end
     
@@ -60,5 +60,17 @@ graph TD
 ## 🔄 How to Use
 Always use the slash commands. They aren't just names; they are **enforced state machines** that maintain the quality of the project.
 
+### 📥 Installation
+To install these workflows into your project:
+```bash
+git clone https://github.com/nickconstantinou/antigravity-workflows.git .agent/workflows
+```
+
+### 🆙 Maintenance
+To keep your workflows up to date:
+```bash
+cd .agent/workflows && git pull origin main
+```
+
 > [!TIP]
-> **Stuck?** Refresh your memory by reading the specific workflow files in [`.agent/workflows/`](file://./.agent/workflows).
+> **Stuck?** Refresh your memory by reading the specific workflow files in [the repository root](file://./).
