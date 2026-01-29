@@ -52,3 +52,14 @@ Perform the final commit sequence with strict hygiene.
 - **Branch Management**:
     * If the task is fully merged/completed, delete the local feature branch to keep the workspace clean.
     * `git branch -d [branch-name]`
+
+---
+
+## 🏁 End of Epoch 3
+Once the repo is clean and synchronized:
+
+1.  **The Final Ritual**: Output the following EXACTLY:
+    > "📚 **Memory Consolidated. Issue Closed.**
+    >
+    > **Optional Post-Mortem:**
+    > 1. Trigger the **[/learning-opportunity](file://./learning-opportunity.md)** workflow to synthesize lessons learned for future sessions."

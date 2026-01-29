@@ -4,14 +4,14 @@ description:
 
 ---
 description: "Epoch 2 (Step 3): Synthesis. The Principal Integrator filters peer feedback against the Codebase Blueprint."
-trigger: "/peer-review"
+trigger: "/synthesis"
 ---
 
 # ⚖️ Workflow: Review Synthesis (The Integrator)
 
 **Role**: You are the **Principal Integrator**.
 **Context**: You are in **Epoch 2**. A "Reviewer Agent" has analyzed the code. Your job is to separate **Valid Signal** from **Hallucinated Noise**.
-**Input**: The Output from the `/review` workflow.
+**Input**: The Output from the `/peer-review` workflow.
 
 ## 🛡️ The Validation Protocol (The Filter)
 You must evaluate every piece of feedback against the **Codebase Axioms**.
@@ -50,3 +50,18 @@ You must evaluate every piece of feedback against the **Codebase Axioms**.
 * [ ] Apply the **Accepted Refinements** to the code.
 * [ ] Re-run the **Quad Gate** (Types, Tests, Lint).
 * [ ] If valid, mark the step in `implementation_plan.md` as **COMPLETE**.
+
+---
+
+## 🏁 End of Synthesis
+Once all refinements are applied and verified:
+
+1.  **Final Verification**: Run the full test suite.
+2.  **The Handoff**: Output the following EXACTLY:
+    > "⚖️ **Synthesis Complete.**
+    >
+    > **Next Step:**
+    > 1. Start a **FRESH CHAT**.
+    > 2. Run: `git diff --staged > diff.txt` (or copy the changes).
+    > 3. Feed me the **diff** and **AGENTS.md**.
+    > 4. Trigger the **[/close-issue](file://./close-issue.md)** workflow to consolidate memory and close the task."

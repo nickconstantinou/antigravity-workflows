@@ -43,9 +43,10 @@ Draft the `implementation_plan.md` using the strict template below.
 1.  **Approval**: Present the plan for user review.
 2.  **The Fresh Start**: Once approved, output the following EXACTLY:
     > "✅ **Architecture Locked.**
-    > To begin implementation (Epoch 2), start a **FRESH CHAT**.
-    > 1. Feed me the **GEMINI.md** (System Prompt).
-    > 2. Feed me this **implementation_plan.md**.
+    >
+    > **Next Step:**
+    > 1. Start a **FRESH CHAT**.
+    > 2. Feed me the **GEMINI.md** (System Prompt) and the **implementation_plan.md**.
     > 3. Trigger the **[/execute](file://./execute.md)** workflow."
 
 ---

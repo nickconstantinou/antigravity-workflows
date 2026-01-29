@@ -16,14 +16,14 @@ graph TD
     
     subgraph "Epoch 2: The Builder (High Speed/Accuracy)"
         CP1 -->|FRESH CHAT| C["Build (/execute)"]
-        C --> D["Peer Review (/review) using Claude"]
-        D --> E["Synthesis (/peer-review)"]
+        C --> D["Peer Review (/peer-review) using external LLM"]
+        D --> E["Synthesis (/synthesis)"]
     end
     
     E --> CP2["🛑 Human Checkpoint: Code Approval"]
     
     subgraph "Epoch 3: The Historian (Analysis/Synthesis)"
-        CP2 -->|FRESH CHAT| F["Cleanup (/close-issue)"]
+        CP2 -->|FRESH CHAT| F["Hygiene (/close-issue)"]
     end
 ```
 
@@ -40,11 +40,12 @@ graph TD
 *   **The Fresh Start**: Start a **NEW CHAT**. Feed the agent the approved **implementation_plan.md**.
 *   **Focus**: Strict adherence to the blueprint using the `execute` workflow.
 *   **Verification**: Passing the **Quad Gate** at every step.
+*   **Audit**: Run `peer-review` with a different model (e.g., Claude Opus) to catch edge cases, then use `synthesis` to integrate valid signal and fix bugs.
 
 ## 📚 Epoch 3: The Historian 📖
 **Goal**: Repository hygiene and long-term memory consolidation.
 *   **The Fresh Start**: Start a **NEW CHAT**. Feed the agent the **git diff** of changes and **AGENTS.md**.
-*   **Tasks**: Update docs, CHANGELOG, and perform the "Closing Ritual" in `AGENTS.md`.
+*   **Tasks**: Update docs, CHANGELOG, and perform the "Closing Ritual" in `close-issue`.
 
 ---
 
@@ -57,20 +58,23 @@ graph TD
 
 ---
 
+## 🛠️ Utility Workflows
+These workflows can be summoned at any time to assist with the development process.
+
+*   **`cto`**: Technical brainstorming and plan critique. Use this to ensure your architecture is sound before committing to a plan.
+*   **`learning-opportunity`**: Deep dive into technical topics. Use this to build intuition about the "why" behind architectural decisions.
+
+---
+
 ## 🔄 How to Use
 Always use the slash commands. They aren't just names; they are **enforced state machines** that maintain the quality of the project.
 
-### 📥 Installation
-To install these workflows into your project:
-```bash
-git clone https://github.com/nickconstantinou/antigravity-workflows.git .agent/workflows
-```
+### 📥 Installation / Maintenance
+To install/update these workflows into your project, run this from your **project root**:
 
-### 🆙 Maintenance
-To keep your workflows up to date:
 ```bash
-cd .agent/workflows && git pull origin main
+git clone https://github.com/nickconstantinou/antigravity-workflows.git temp-wf && cp -r temp-wf/.agent . && rm -rf temp-wf
 ```
 
 > [!TIP]
-> **Stuck?** Refresh your memory by reading the specific workflow files in [the repository root](file://./).
+> **Stuck?** Refresh your memory by reading the specific workflow files in [the directory](file://./.agent/workflows/create-plan.md).

@@ -63,4 +63,4 @@ Once all steps are marked as **Done**:
     > 1. Start a **FRESH CHAT**.
     > 2. Run: `git diff --staged > diff.txt` (or copy the changes).
     > 3. Feed me the **diff** and **AGENTS.md**.
-    > 4. Trigger the **[/close-issue](file://./close-issue.md)** workflow to update the repo's long-term memory."
+    > 4. Trigger the **[/peer-review](file://./peer-review.md)** workflow to start the Senior Architect audit (using a high-reasoning model like Claude Opus)."

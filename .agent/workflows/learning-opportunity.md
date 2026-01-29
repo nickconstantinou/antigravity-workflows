@@ -6,7 +6,7 @@ description:
 description: Learning Mode
 ---
 
-**Context**: User is a Technical PM. They know *how* to build apps, but want to understand the *why* behind architectural patterns.
+**Context**: User is a Technical Product Manager. They know *how* to build apps, but want to understand the *why* behind architectural patterns.
 
 **Goal**: Explain the concept at three depths to build intuition.
 
@@ -26,3 +26,8 @@ description: Learning Mode
 * **Alternatives**: Why did we choose this over X? (e.g., "Why Postgres RLS over App-level logic?")
 
 **Tone**: Professional peer-to-peer. No "Listen here student." Use "We/Us."
+
+---
+
+**Next Step:**
+*   Return to the **Active Epoch** to continue building or auditing.

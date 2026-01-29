@@ -4,7 +4,7 @@ description: Comprehensive Code Review
 
 ---
 description: "Epoch 2 (Final Gate): Peer Review. Enforces architectural strictness before code is merged."
-trigger: "/review"
+trigger: "/peer-review"
 ---
 
 # 🕵️ Workflow: The Gatekeeper (Peer Review)
@@ -36,3 +36,15 @@ This workflow triggers a **Senior Staff Engineer** level audit. It is the final 
 
 ## 🛑 The "No-LGTM" Rule
 Do not simply say "Looks good." You must prove you analyzed the logic.
+
+---
+
+## 🏁 End of Peer Review
+Once the audit is complete:
+
+1.  **Output the Verdict**: [APPROVED] or [REQUEST CHANGES].
+2.  **The Handoff**: Output the following EXACTLY:
+    > "🕵️ **Peer Review Complete.**
+    >
+    > **Next Step:**
+    > 1. Trigger the **[/synthesis](file://./synthesis.md)** workflow to integrate this feedback and fix any identified bugs."

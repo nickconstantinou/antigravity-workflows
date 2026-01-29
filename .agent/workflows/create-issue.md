@@ -64,3 +64,6 @@ Don't just output the text. **Create a new file** in `docs/issues/open/` (create
 After creating the file, output:
 
 "✅ Issue Captured. 📂 File: [filepath]
+
+**Next Step:**
+1. Trigger the **[/create-plan](file://./create-plan.md)** workflow to convert this issue into a deterministic implementation plan."
