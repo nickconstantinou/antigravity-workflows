@@ -28,6 +28,7 @@ Before generating the plan, you must establish the **Laws of Physics** for this 
 
 ## Phase 2: Plan Generation (Cut Once)
 Draft the `implementation_plan.md` using the strict template below.
+* **Important**: You MUST use the `write_to_file` tool to create this as an **artifact** at the `implementation_plan_artifact` path (usually `~/.gemini/antigravity/brain/.../implementation_plan.md`).
 
 **Rules for Steps:**
 * **Atomic Modularity**: 1 Step = 1 Atomic Unit (File/Function). Do not bundle unrelated changes.
@@ -37,13 +38,11 @@ Draft the `implementation_plan.md` using the strict template below.
 ## Phase 3: Handoff (End of Epoch 1)
 
 1.  **Approval**: Present the plan for user review.
-2.  **The Fresh Start**: Once approved, output the following EXACTLY:
+2.	**The Handoff**: Once approved, output the following EXACTLY:
     > "✅ **Architecture Locked.**
     >
     > **Next Step:**
-    > 1. Start a **FRESH CHAT**.
-    > 2. Feed me the **AGENTS.md** (System Prompt) and the **implementation_plan.md**.
-    > 3. Trigger the **[/execute](./execute.md)** workflow."
+    > 1. Trigger the **[/execute](./execute.md)** workflow."
 
 ---
 

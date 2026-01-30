@@ -43,8 +43,10 @@ Stop and verify the code against these 4 gates:
 4.  **Atomic**: Is the file focused on a single responsibility?
 
 ### Phase 4: The [U]pdate
-Reprint the **Current Step** from the plan with its status updated.
-* Format: `[X] Step 2: Create User Action (✅ Verified)`
+### Phase 4: The [U]pdate
+Call the `task_boundary` tool to reflect the current state.
+* `TaskStatus`: "Verifying Step 2..." or "Implementing Step 3..."
+* `TaskSummary`: "Completed Step 2 (User Action). Verified with tests."
 
 ---
 
@@ -52,11 +54,10 @@ Reprint the **Current Step** from the plan with its status updated.
 Once all steps are marked as **Done**:
 
 1.  **Final Verification**: Run the full test suite for the feature.
-2.  **The Handoff**: Output the following EXACTLY:
+2.  **The Handoff**:
+    *   Call `render_diffs` on the modified files to show the user the changes.
+    *   Output the following EXACTLY:
     > "🛠️ **Build Complete.**
     >
     > **Next Step:**
-    > 1. Start a **FRESH CHAT**.
-    > 2. Run: `git diff --staged > diff.txt` (or copy the changes).
-    > 3. Feed me the **diff** and **AGENTS.md**.
-    > 4. Trigger the **[/peer-review](./peer-review.md)** workflow to start the Senior Architect audit (using a high-reasoning model like Claude Opus)."
+    > 1. Trigger the **[/peer-review](./peer-review.md)** workflow."
