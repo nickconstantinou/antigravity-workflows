@@ -1,8 +1,4 @@
 ---
-description: Unified Research & Plan Creation Stage
----
-
----
 description: "Epoch 1 (Step 2): Architecture. Converts the Issue into a deterministic Blueprint (Schemas + Atomic Steps)."
 trigger: "/create-plan"
 ---
@@ -46,8 +42,8 @@ Draft the `implementation_plan.md` using the strict template below.
     >
     > **Next Step:**
     > 1. Start a **FRESH CHAT**.
-    > 2. Feed me the **GEMINI.md** (System Prompt) and the **implementation_plan.md**.
-    > 3. Trigger the **[/execute](file://./execute.md)** workflow."
+    > 2. Feed me the **AGENTS.md** (System Prompt) and the **implementation_plan.md**.
+    > 3. Trigger the **[/execute](./execute.md)** workflow."
 
 ---
 
@@ -104,3 +100,4 @@ Draft the `implementation_plan.md` using the strict template below.
 
 * **Risk**: 
 * **Mitigation**:
+```

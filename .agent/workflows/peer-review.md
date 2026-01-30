@@ -47,4 +47,4 @@ Once the audit is complete:
     > "🕵️ **Peer Review Complete.**
     >
     > **Next Step:**
-    > 1. Trigger the **[/synthesis](file://./synthesis.md)** workflow to integrate this feedback and fix any identified bugs."
+    > 1. Trigger the **[/synthesis](./synthesis.md)** workflow to integrate this feedback and fix any identified bugs."

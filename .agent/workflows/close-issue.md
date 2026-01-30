@@ -1,8 +1,4 @@
 ---
-description: Close Issue
----
-
----
 description: "Epoch 3 (Final Step): The Historian. Updates Human Docs, RAG Context, and Archives the Issue."
 trigger: "/close-issue"
 ---
@@ -62,4 +58,4 @@ Once the repo is clean and synchronized:
     > "📚 **Memory Consolidated. Issue Closed.**
     >
     > **Optional Post-Mortem:**
-    > 1. Trigger the **[/learning-opportunity](file://./learning-opportunity.md)** workflow to synthesize lessons learned for future sessions."
+    > 1. Trigger the **[/learning-opportunity](./learning-opportunity.md)** workflow to synthesize lessons learned for future sessions."
