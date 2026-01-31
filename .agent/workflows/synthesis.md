@@ -5,6 +5,8 @@ description:
 ---
 description: "Epoch 2 (Step 3): Synthesis. The Principal Integrator filters peer feedback against the Codebase Blueprint."
 trigger: "/synthesis"
+model: "gemini-3-flash"
+mode: "plan"
 ---
 
 # ⚖️ Workflow: Review Synthesis (The Integrator)

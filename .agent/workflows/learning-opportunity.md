@@ -3,7 +3,9 @@ description:
 ---
 
 ---
-description: Learning Mode
+name: "Learning Mode"
+model: "gemini-3-pro"
+mode: "plan"
 ---
 
 **Context**: User is a Technical Product Manager. They know *how* to build apps, but want to understand the *why* behind architectural patterns.

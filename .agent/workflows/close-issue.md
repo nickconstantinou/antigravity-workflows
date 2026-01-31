@@ -1,6 +1,11 @@
 ---
 description: "Epoch 3 (Final Step): The Historian. Updates Human Docs, RAG Context, and Archives the Issue."
-trigger: "/close-issue"
+---
+
+---
+name: "Context Mapping & Closure (The Historian)"
+model: "gemini-3-pro"
+mode: "plan"
 ---
 
 # 📚 Workflow: Context Mapping & Closure (The Historian)

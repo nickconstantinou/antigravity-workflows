@@ -2,6 +2,12 @@
 description: Summon the CTO for architectural guidance, context review, or product priority alignment.
 ---
 
+---
+name: "CTO Protocol"
+model: "gemini-3-pro"
+mode: "plan"
+---
+
 # CTO Protocol
 
 1.  **Analyze Context**:

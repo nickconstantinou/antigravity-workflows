@@ -5,6 +5,8 @@ description: Create Issue Workflow
 ---
 description: "Epoch 1 (Step 1): Discovery. Captures the 'What' and 'Why' with precision. Pre-requisite for Planning."
 trigger: "/create-issue"
+model: "gemini-3-pro"
+mode: "plan"
 ---
 
 User is mid-development and needs to capture a bug, feature, or improvement without breaking flow.

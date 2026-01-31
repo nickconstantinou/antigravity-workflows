@@ -1,6 +1,12 @@
 ---
 description: "Epoch 1 (Step 2): Architecture. Converts the Issue into a deterministic Blueprint (Schemas + Atomic Steps)."
+---
+
+---
+description: "Create Implementation Plan"
 trigger: "/create-plan"
+model: "claude-opus-4.5"
+mode: "plan"
 ---
 
 # Workflow: Create Implementation Plan

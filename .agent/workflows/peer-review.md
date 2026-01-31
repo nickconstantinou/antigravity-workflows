@@ -5,6 +5,8 @@ description: Comprehensive Code Review
 ---
 description: "Epoch 2 (Final Gate): Peer Review. Enforces architectural strictness before code is merged."
 trigger: "/peer-review"
+model: "claude-opus-4.5"
+mode: "plan"
 ---
 
 # 🕵️ Workflow: The Gatekeeper (Peer Review)
