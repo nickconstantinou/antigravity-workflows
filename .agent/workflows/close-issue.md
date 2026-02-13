@@ -54,6 +54,11 @@ Perform the final commit sequence with strict hygiene.
     * If the task is fully merged/completed, delete the local feature branch to keep the workspace clean.
     * `git branch -d [branch-name]`
 
+## 6. Retrospective & Self-Learning 🎓
+**MANDATORY**: Before finishing, you must learn from this issue.
+1. Trigger the **[/retrospective](./retrospective.md)** workflow.
+2. Analyze your performance and update `AGENTS.md`.
+
 ---
 
 ## 🏁 End of Epoch 3
@@ -62,5 +67,6 @@ Once the repo is clean and synchronized:
 1.  **The Final Ritual**: Output the following EXACTLY:
     > "📚 **Memory Consolidated. Issue Closed.**
     >
-    > **Optional Post-Mortem:**
-    > 1. Trigger the **[/learning-opportunity](./learning-opportunity.md)** workflow to synthesize lessons learned for future sessions."
+    > **Next Steps:**
+    > 1. Performance analyzed via **[/retrospective](./retrospective.md)**.
+    > 2. Lessons distilled into **[AGENTS.md](../../AGENTS.md)**."

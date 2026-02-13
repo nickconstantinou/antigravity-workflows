@@ -15,6 +15,10 @@ This workflow triggers a **Senior Staff Engineer** level audit. It is the final 
 
 ## 📋 Strict Compliance Checklist
 
+### 0. The Plan
+- [ ] ** Read the plans, tasks & associated artefacts
+- [ ] ** Do the code changes reflect the requested changes? (Reject if no)
+
 ### 1. 📐 The Contract (Type Safety)
 - [ ] **Zero `any`**: Are there any explicit or implicit `any` types? (Reject if yes).
 - [ ] **Exhaustiveness**: Are all union types handled in switch statements?

@@ -63,7 +63,4 @@ Once all refinements are applied and verified:
     > "⚖️ **Synthesis Complete.**
     >
     > **Next Step:**
-    > 1. Start a **FRESH CHAT**.
-    > 2. Run: `git diff --staged > diff.txt` (or copy the changes).
-    > 3. Feed me the **diff** and **AGENTS.md**.
     > 4. Trigger the **[/close-issue](file://./close-issue.md)** workflow to consolidate memory and close the task."

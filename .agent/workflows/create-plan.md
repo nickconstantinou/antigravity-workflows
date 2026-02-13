@@ -24,13 +24,22 @@ Before generating the plan, you must establish the **Laws of Physics** for this 
 1.  **Codebase Traversal**:
     * Read relevant files. Map the dependency graph.
     * *Constraint*: Identify where **State** lives. We want to push state to the edges and keep logic **Pure**.
-2.  **Schema Definition (The Contract)**:
+2.  **Boundary Check (The Wire)**:
+    * If the feature involves an API/RPC call, you MUST:
+        1. Locate the client-side call (e.g., `ScoutService.ts`).
+        2. Locate the server-side handler (e.g., `supabase/functions/.../index.ts`).
+        3. **Verify the contract matches exactly** (Action names, Payload shapes).
+    * *Constraint*: Assume all RPC endpoints are missing until proven present.
+3.  **Schema Definition (The Contract)**:
     * Draft the **TypeScript Interfaces** or **Zod Schemas** that define the inputs and outputs.
     * *Constraint*: Use the **Result Pattern**. Functions must return `Result<T, E>`, not throw exceptions.
 3.  **Test Strategy (The Truth)**:
     * Define the test cases that prove the code works.
     * *Constraint*: Verification is not an afterthought. It is the definition of done.
-4. **Self-Correction**: If anything is unclear, stop and ask the user BEFORE generating the plan.
+4.  **Code Hygiene Check**:
+    * If touching EXISTING files: Does the file adhere to `AGENTS.md` (Headers/Types)?
+    * If NO: The first step of the plan MUST be "Refactor [File] to Standard."
+5. **Self-Correction**: If anything is unclear, stop and ask the user BEFORE generating the plan.
 
 ## Phase 2: Plan Generation (Cut Once)
 Draft the `implementation_plan.md` using the strict template below.

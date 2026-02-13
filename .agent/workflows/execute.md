@@ -28,6 +28,12 @@ Deterministic Execution (The Builder)
 
 For each step in the `implementation_plan.md`, perform this exact cycle:
 
+### Phase 0: The Golden Rule Injection (Per File)
+**Before touching ANY file (New or Existing)**:
+1.  **Check Headers**: Does it have the Verbose Header? If not, Generate it.
+2.  **Check Types**: Are there `any` types? If yes, mark them for removal.
+*Rule*: You cannot "Update" a legacy file without first bringing it to compliance.
+
 ### Phase 1: The Contract [T]est
 **Before writing logic**, write the test case that proves the logic is required.
 * **Action**: Create the `.test.ts` file.
